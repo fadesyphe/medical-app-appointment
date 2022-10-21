@@ -4,7 +4,16 @@
       Categories
     </h2>
     <div>
-      <ul class="flex items-center justify-between">
+      <ul
+        class="
+          flex
+          items-center
+          justify-between
+          gap-5
+          overflow-x-auto
+          content-scroll
+        "
+      >
         <li v-for="item in categories" :key="item.name">
           <CategoryItem
             :name="item.name"
@@ -33,6 +42,7 @@ export default {
         { name: "dentist" },
         { name: "doctor-pil" },
         { name: "gynecologist" },
+        { name: "bud" },
       ],
       selectCategory: "dentist",
       hoverCategory: "",
@@ -51,3 +61,15 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.content-scroll::-webkit-scrollbar {
+  width: 0;
+}
+.content-scroll {
+  -ms-overflow-style: none;
+}
+.content-scroll {
+  overflow-x: -moz-scrollbars-none;
+}
+</style>

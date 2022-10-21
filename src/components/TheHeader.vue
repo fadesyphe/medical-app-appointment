@@ -1,7 +1,9 @@
 <template>
   <header class="px-6 pb-6 pt-16 bg-[#51A8FF] rounded-[32px] text-white">
     <div class="flex justify-between items-center">
-      <h2 class="font-medium leading-4 tracking-wide">Hi, Steven</h2>
+      <h2 class="font-medium leading-4 tracking-wide">
+        Hi, {{ this.$store.state.personal }}
+      </h2>
 
       <TheNotification />
     </div>

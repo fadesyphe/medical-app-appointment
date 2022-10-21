@@ -1,25 +1,27 @@
 <template>
-  <footer class="mt-auto">
-    <div>
-      <nav
-        class="h-[89px] w-full flex items-center bg-menu-bg shadow-menu-shadow"
-      >
-        <ul class="w-full flex items-center justify-around">
-          <li v-for="link in routerLinks" :key="link.name">
-            <router-link
-              :to="`${link.path}`"
-              class="w-8 h-8"
-              @mouseover="hoverMenu"
-            >
-              <BaseIcon
-                :name="link.name"
-                class="w-[32px] h-[32px] text-[#200E32] mr-[5px] pointer"
-              />
-            </router-link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+  <footer class="sticky w-full max-w-[375px] z-50 bottom-[-1px]">
+    <nav
+      class="
+        h-[89px]
+        w-full
+        flex
+        items-center
+        bg-white
+        rounded-[0px_0px_32px_32px]
+        shadow-menu-shadow
+      "
+    >
+      <ul class="w-full flex items-center justify-around">
+        <li v-for="link in routerLinks" :key="link.name">
+          <router-link :to="`${link.path}`" class="w-8 h-8">
+            <BaseIcon
+              :name="link.name"
+              class="w-[32px] h-[32px] text-[#200E32] mr-[5px] pointer"
+            />
+          </router-link>
+        </li>
+      </ul>
+    </nav>
   </footer>
 </template>
 

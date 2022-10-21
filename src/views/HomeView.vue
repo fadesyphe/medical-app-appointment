@@ -1,6 +1,14 @@
 <template>
-  <TheHeader />
-  <TheMain />
+  <div
+    class="
+      overflow-y-auto overflow-x-hidden
+      content-scroll
+      rounded-[32px_32px_0px_0px]
+    "
+  >
+    <TheHeader />
+    <TheMain />
+  </div>
   <TheFooter />
 </template>
 
@@ -25,3 +33,15 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.content-scroll::-webkit-scrollbar {
+  width: 0;
+}
+.content-scroll {
+  -ms-overflow-style: none;
+}
+.content-scroll {
+  overflow: -moz-scrollbars-none;
+}
+</style>

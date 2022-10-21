@@ -4,9 +4,9 @@
       w-full
       max-w-[375px]
       h-full
+      flex flex-col
       max-h-[812px]
       rounded-[32px]
-      overflow-hidden
       bg-[#F8FAFF]
     "
   >

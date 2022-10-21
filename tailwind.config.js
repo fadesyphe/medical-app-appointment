@@ -8,6 +8,7 @@ module.exports = {
         'search-text': 'rgba(8, 12, 47, 0.65)',
         'category-text': 'rgba(8, 12, 47, 0.65)',
         'pink-bg': 'rgba(255, 163, 64, 0.75)',
+        'blue-bg': '#70FFD0',
         'menu-bg':
           'linear-gradient(180deg, #FFFFFF 6.25%, rgba(255, 255, 255, 0.9) 127.68%)'
       },
